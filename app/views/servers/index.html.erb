@@ -1,0 +1,7 @@
+<h1>This is the Server Index View</h1>
+
+<% @servers.each do |server| %>
+	<h2><%= server.name %></h2>
+<% end %>
+
+<%= link_to "New Server", new_server_path %>
